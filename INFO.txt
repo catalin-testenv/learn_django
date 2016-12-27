@@ -1,0 +1,19 @@
+pip freeze > requirements.txt
+pip install -r requirements.txt
+
+
+SQL:
+# ================= postgres
+# sudo -i -u postgres
+# psql
+# CREATE USER django PASSWORD 'django'; | DROP USER django;
+# CREATE DATABASE learn_django; | DROP DATABASE learn_django;
+# GRANT ALL PRIVILEGES ON DATABASE learn_django to django; | REVOKE ALL ON DATABASE learn_django FROM django;
+# ALTER USER django WITH SUPERUSER;
+
+# ============= mysql
+# MySQL.  Versions 5.0+ are recommended.
+
+# CREATE USER 'django'@'localhost' IDENTIFIED BY 'django';
+# CREATE DATABASE learn_django;
+# GRANT ALL PRIVILEGES ON learn_django.* TO 'django'@'localhost';
